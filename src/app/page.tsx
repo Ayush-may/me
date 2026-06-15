@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { GitHubCalendar } from "react-github-calendar"
-import { FaGithub, FaLink } from "react-icons/fa"
+import { FaFilePdf, FaGithub, FaLink, FaLinkedin } from "react-icons/fa"
 import {
   Select,
   SelectContent,
@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function Home() {
 
@@ -46,6 +47,13 @@ export default function Home() {
 
         {/* get in touch */}
         <p className="text-sm font-normal text-gray-700 leading-relaxed tracking-wide mt-5" >Get in touch: <Link href={"mailto:ayushsharma014may@gmail.com"} className="cursor-pointer text-gray-700 border-0  hover:border-b" >ayushsharma014may@gmail.com</Link></p>
+
+        <div className="flex gap-2 flex-wrap mt-4" >
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaFilePdf /> Download Resume</span>
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaLinkedin /> LinkedIn</span>
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaGithub /> Github</span>
+          {/* <span className="text-sm text-gray-700" >+91 6302594846</span> */}
+        </div>
       </div>
 
       {/* experience */}
@@ -137,10 +145,14 @@ export default function Home() {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="2023">2023</SelectItem>
-                <SelectItem value="2024">2024</SelectItem>
-                <SelectItem value="2025">2025</SelectItem>
-                <SelectItem value="2026">2026</SelectItem>
+                {[...Array(5)].map((_, i) => {
+                  const year = new Date().getFullYear() - i;
+                  return (
+                    <SelectItem key={year} value={year.toString()}>
+                      {year}
+                    </SelectItem>
+                  );
+                })}
               </SelectGroup>
             </SelectContent>
           </Select>
@@ -150,9 +162,9 @@ export default function Home() {
             username="ayush-may"
             colorScheme="light"
             className="text-gray-800 w-full mx-auto"
-            fontSize={14}
-            blockSize={14}
-            blockMargin={4}
+            fontSize={13}
+            blockSize={11}
+            blockMargin={2}
             showMonthLabels={true}
             showWeekdayLabels={true}
             showTotalCount={true}
@@ -203,12 +215,18 @@ export default function Home() {
 
           <div className="border border-gray-300 p-4 mt-1" >
 
+            {/* image */}
+            <div className="w-full" >
+              <Image src="https://placehold.co/200" alt="" />
+            </div>
+
             {/* timeline */}
             <div className="relative p-0">
               <div className="flex justify-between mb-4" >
                 <div className="flex items-center gap-2" >
-                  <p className="text-md text-gray-800 font-bold leading-none" >AI Form Generator</p>
+                  <p className="text-md text-gray-800 font-bold leading-none" >AI FeedBack</p>
                   <span className="w-1 h-1 rounded-full bg-gray-600 inline-block" ></span>
+
                   <div className="flex gap-2" >
                     <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaLink /></span>
                     <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaGithub /></span>
@@ -222,14 +240,11 @@ export default function Home() {
 
             <div className="flex items-center flex-wrap gap-2 mt-4" >
               <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MERN</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Razorpay</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >WebSockets</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS EC2</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SES</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SNS</span>
+              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Gemini API</span>
+              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS Dynamo DB</span>
+              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS S3</span>
               <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MongoDB</span>
             </div>
-
           </div>
 
 
