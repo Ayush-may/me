@@ -16,6 +16,8 @@ import { ProjectCard } from "@/components/ProjectCard"
 import { experiences } from "@/data/experience"
 import { ExperienceCard } from "@/components/ExperienceCard"
 import { TechStacks } from "@/components/TechStacks"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { FiArrowUp, FiMenu } from "react-icons/fi"
 
 export default function Home() {
 
@@ -23,27 +25,40 @@ export default function Home() {
 
   return (
 
-    <div className="md:w-7/12 w-11/12 mx-auto relative mb-20" >
+    <div className="md:w-7/12 w-11/12 mx-auto relative mb-20" id="_home-top" >
 
-      <nav className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-4 py-1 bg-black text-white border border-gray-200  rounded-full w-fit max-w-100 transition-all duration-300" >
+      <nav className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-1 py-1 bg-black text-white border border-gray-200  rounded-full w-fit transition-all duration-300" >
         <div className="flex items-center gap-2">
 
-          <div className="w-8 h-8 rounded-full overflow-hidden border border-gray-200 bg-gray-50 shrink-0" >
-            <img src="/ayush.jpg" alt="Ayush Sharma" className="w-full h-full object-cover transition-transform duration-500 hover:scale-115" />
+          <div className="w-8 h-8 rounded-full overflow-hidden " >
+            <Avatar>
+              <AvatarImage src="/ayush.jpg" className="rounded-none border border-gray-200 object-cover scale-[1.05]" />
+              <AvatarFallback>AS</AvatarFallback>
+            </Avatar>
           </div>
-          <span className="text-sm tracking-normal">Ayush Sharma</span>
+          <span className="text-sm tracking-normal text-nowrap">Ayush Sharma</span>
 
         </div>
 
-        <div className="flex items-center gap-1">
-          <a href="#projects" className="text-[13px] font-normal text-white  border-0  hover:border-b">
+        <div className="flex items-center gap-5">
+          <Link href="#experience" className="text-[13px] font-normal text-white  border-0  hover:border-b">
+            Experience
+          </Link>
+          <Link href="#github" className="text-[13px] font-normal text-white  border-0  hover:border-b">
+            Github
+          </Link>
+          <Link href="#projects" className="text-[13px] font-normal text-white  border-0  hover:border-b">
             Projects
-          </a>
+          </Link>
         </div>
+
+        <Link href="#_home-top" className="text-gray-300 w-fit hover:bg-gray-700 transition-colors duration-150 rounded-full p-2" >
+          <FiArrowUp size={15} className="" />
+        </Link>
       </nav>
 
       {/* header name */}
-      <div className="mt-28" >
+      <div className="mt-28" id="home"  >
 
         <h4 className="text-5xl font-normal my-5 leading-tight" >I'm Software Engineer.</h4>
         {/* <h4 className="text-5xl font-normal my-5" >A Software Engineer.</h4> */}
@@ -65,7 +80,7 @@ export default function Home() {
 
 
       {/* experience */}
-      <div className="mt-10" >
+      <div className="mt-10" id="experience" >
         <p className="text-md text-gray-700" >Experience</p>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} index={index} experience={experience} />
@@ -73,7 +88,7 @@ export default function Home() {
       </div >
 
       {/* Github */}
-      <div className="mt-10" >
+      <div className="mt-10" id="github" >
         <p className="text-md text-gray-700" >Github</p>
         <div className="mx-auto w-full  mt-1" >
           <Select defaultValue="2026" onValueChange={(e: any) => setYear(e)}>
