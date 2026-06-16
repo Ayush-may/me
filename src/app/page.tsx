@@ -26,7 +26,7 @@ export default function Home() {
   return (
 
     <div className="md:w-7/12 w-11/12 mx-auto relative mb-20" id="_home-top" >
-
+      {/* 
       <nav className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-1 py-1 bg-black text-white border border-gray-200  rounded-full w-fit transition-all duration-300" >
         <div className="flex items-center gap-2">
 
@@ -53,6 +53,40 @@ export default function Home() {
         </div>
 
         <Link href="#_home-top" className="text-gray-300 w-fit hover:bg-gray-700 transition-colors duration-150 rounded-full p-2" >
+          <FiArrowUp size={15} className="" />
+        </Link>
+      </nav> */}
+
+      {/* bottom position */}
+      {/* <nav className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-1 py-1 bg-white text-black border border-gray-300  rounded-full w-fit transition-all duration-300" > */}
+
+      {/* top position and white theme */}
+      <nav className="fixed top-10 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-1 py-1 bg-white text-black border border-gray-300  rounded-full w-fit transition-all duration-300 shadow-sm" >
+        <div className="flex items-center gap-2">
+
+          <div className="w-8 h-8 rounded-full overflow-hidden " >
+            <Avatar>
+              <AvatarImage src="/ayush.jpg" className="rounded-none border border-gray-200 object-cover scale-[1.05]" />
+              <AvatarFallback>AS</AvatarFallback>
+            </Avatar>
+          </div>
+          <span className="text-sm tracking-normal text-nowrap">Ayush Sharma</span>
+
+        </div>
+
+        <div className="flex items-center gap-5">
+          <Link href="#experience" className="text-[13px] font-normal  border-0  hover:border-b">
+            Experience
+          </Link>
+          <Link href="#github" className="text-[13px] font-normal border-0  hover:border-b">
+            Github
+          </Link>
+          <Link href="#projects" className="text-[13px] font-normal border-0  hover:border-b">
+            Projects
+          </Link>
+        </div>
+
+        <Link href="#_home-top" className="text-gray-500 w-fit hover:bg-gray-200/50 transition-colors duration-150 rounded-full p-2" >
           <FiArrowUp size={15} className="" />
         </Link>
       </nav>
