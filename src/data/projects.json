@@ -1,0 +1,79 @@
+[
+  {
+    "title": "AI Form Generator",
+    "link": "#",
+    "github": "#",
+    "duration": "June 2026 - Present",
+    "tags": [
+      "MERN",
+      "Razorpay",
+      "WebSockets",
+      "AWS EC2",
+      "AWS SES",
+      "AWS SNS",
+      "MongoDB"
+    ]
+  },
+  {
+    "title": "AI FeedBack",
+    "link": "#",
+    "github": "#",
+    "duration": "June 2026 - Present",
+    "tags": [
+      "MERN",
+      "Gemini API",
+      "AWS Dynamo DB",
+      "AWS S3",
+      "MongoDB"
+    ]
+  },
+  {
+    "title": "ChitChat",
+    "link": "https://chitchat-v2.vercel.app/",
+    "github": "https://github.com/Ayush-may/chitchat-v2-nextjs",
+    "description": "Real-time chat application with live WebSocket connections. Note: Backend is currently not live.",
+    "tags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "WebSockets"
+    ]
+  },
+  {
+    "title": "Meal Food",
+    "github": "https://github.com/Ayush-may/theMeal_reactjs_frontend",
+    "githubBackend": "https://github.com/Ayush-may/theMeal_reactjs_backend",
+    "description": "A simple e-commerce platform where users can browse, purchase products, add items to cart, and track status. Built using a public API.",
+    "tags": [
+      "MERN Stack",
+      "Redux",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "title": "Aedvik",
+    "link": "https://aedvik.com/",
+    "github": "https://github.com/Ayush-may/aedvik.com",
+    "description": "A mentor and mentee booking platform built for a client. Mentors and mentees can connect, book appointments, and interact. Integrated payment gateway and Calendly third-party API service.",
+    "tags": [
+      "Laravel",
+      "MySQL",
+      "Calendly API"
+    ]
+  },
+  {
+    "title": "Feedback App",
+    "github": "https://github.com/Ayush-may/feedback-app-frontend",
+    "githubBackend": "https://github.com/Ayush-may/feedback-app-backend",
+    "description": "Built during a technical assessment for Kommonify Venture Pvt Ltd. Features a feedback collection and management system.",
+    "tags": [
+      "MERN Stack",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "MongoDB",
+      "AWS DynamoDB"
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "name": "HTML5",
+    "icon": "SiHtml5",
+    "backgroundColor": "#E34F26"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "SiJavascript",
+    "backgroundColor": "#323330",
+    "textColor": "#F7DF1E",
+    "spanTextColor": "#FFFFFF"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "backgroundColor": "#007ACC"
+  },
+  {
+    "name": "AWS",
+    "icon": "SiAmazonwebservices",
+    "backgroundColor": "#FF9900"
+  },
+  {
+    "name": "Firebase",
+    "icon": "SiFirebase",
+    "backgroundColor": "#039BE5"
+  },
+  {
+    "name": "Netlify",
+    "icon": "SiNetlify",
+    "backgroundColor": "#000000",
+    "textColor": "#00C7B7",
+    "spanTextColor": "#FFFFFF",
+    "borderClass": "border border-[#00C7B7]/20"
+  },
+  {
+    "name": "Render",
+    "icon": "SiRender",
+    "backgroundColor": "#46E3B7",
+    "textColor": "#000000"
+  },
+  {
+    "name": "Vercel",
+    "icon": "SiVercel",
+    "backgroundColor": "#000000",
+    "borderClass": "border border-gray-800"
+  },
+  {
+    "name": "AlpineJS",
+    "icon": "SiAlpinedotjs",
+    "backgroundColor": "#8BC0D0",
+    "textColor": "#2D3748"
+  },
+  {
+    "name": "Chart.js",
+    "icon": "SiChartdotjs",
+    "backgroundColor": "#FF6384"
+  },
+  {
+    "name": "Express.js",
+    "icon": "SiExpress",
+    "backgroundColor": "#303030"
+  },
+  {
+    "name": "JWT",
+    "icon": "SiJsonwebtokens",
+    "backgroundColor": "#000000",
+    "borderClass": "border border-gray-800"
+  },
+  {
+    "name": "Nestjs",
+    "icon": "SiNestjs",
+    "backgroundColor": "#E0234E"
+  },
+  {
+    "name": "NPM",
+    "icon": "SiNpm",
+    "backgroundColor": "#CB3837"
+  },
+  {
+    "name": "Next",
+    "icon": "SiNextdotjs",
+    "backgroundColor": "#000000",
+    "borderClass": "border border-gray-800"
+  },
+  {
+    "name": "Node.js",
+    "icon": "SiNodedotjs",
+    "backgroundColor": "#339933"
+  },
+  {
+    "name": "Nodemon",
+    "icon": "SiNodemon",
+    "backgroundColor": "#1b1c1d",
+    "textColor": "#76D04B",
+    "spanTextColor": "#FFFFFF",
+    "borderClass": "border border-gray-800"
+  },
+  {
+    "name": "Redux",
+    "icon": "SiRedux",
+    "backgroundColor": "#764ABC"
+  },
+  {
+    "name": "React Hook Form",
+    "icon": "SiReacthookform",
+    "backgroundColor": "#EC5990"
+  },
+  {
+    "name": "React Query",
+    "icon": "SiReactquery",
+    "backgroundColor": "#FF4154"
+  },
+  {
+    "name": "Socket.io",
+    "icon": "SiSocketdotio",
+    "backgroundColor": "#010101",
+    "borderClass": "border border-gray-800"
+  },
+  {
+    "name": "Spring",
+    "icon": "SiSpring",
+    "backgroundColor": "#6DB33F"
+  },
+  {
+    "name": "Tailwindcss",
+    "icon": "SiTailwindcss",
+    "backgroundColor": "#06B6D4"
+  },
+  {
+    "name": "Nginx",
+    "icon": "SiNginx",
+    "backgroundColor": "#009639"
+  },
+  {
+    "name": "Amazon DynamoDB",
+    "backgroundColor": "#4053D6"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "SiMongodb",
+    "backgroundColor": "#47A248"
+  },
+  {
+    "name": "MySQL",
+    "icon": "SiMysql",
+    "backgroundColor": "#00758F"
+  },
+  {
+    "name": "Postgres",
+    "icon": "SiPostgresql",
+    "backgroundColor": "#336791"
+  },
+  {
+    "name": "Prisma",
+    "icon": "SiPrisma",
+    "backgroundColor": "#2D3748"
+  },
+  {
+    "name": "Docker",
+    "icon": "SiDocker",
+    "backgroundColor": "#2496ED"
+  },
+  {
+    "name": "Postman",
+    "icon": "SiPostman",
+    "backgroundColor": "#FF6C37"
+  }
+]
