@@ -1,0 +1,35 @@
+[
+  {
+    "company": "Tata Consultancy Services",
+    "roles": [
+      {
+        "title": "System Engineer (Digital)",
+        "duration": "June 2026 - Present"
+      }
+    ],
+    "description": "Hired as a System Engineer (Digital) at Tata Consultancy Services, I am part of a team delivering innovative technology solutions to clients. I work on building and maintaining scalable web applications using modern tools and frameworks. My focus is on developing clean, efficient code while ensuring high performance and reliability. I collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support. I am passionate about continuous learning and committed to delivering excellence in every project I work on."
+  },
+  {
+    "company": "Kommonify Venture Pvt Ltd.",
+    "roles": [
+      {
+        "title": "Associate Software Engineer",
+        "duration": "May 2026 - Present"
+      },
+      {
+        "title": "Full Stack Developer Fellow",
+        "duration": "Jul 2025 - May 2026"
+      }
+    ],
+    "description": "Worked as a Full Stack Developer, building end-to-end features from frontend to backend. Developed a subscription management module, integrated Razorpay payment gateway, implemented real-time user tracking using WebSockets, built secure payment APIs with idempotency support, and developed an admin console using MongoDB aggregation pipelines to generate data from multiple collections.",
+    "tags": [
+      "MERN",
+      "Razorpay",
+      "WebSockets",
+      "AWS EC2",
+      "AWS SES",
+      "AWS SNS",
+      "MongoDB"
+    ]
+  }
+]

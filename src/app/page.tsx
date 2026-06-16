@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { GitHubCalendar } from "react-github-calendar"
-import { FaGithub, FaLink } from "react-icons/fa"
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa"
 import {
   Select,
   SelectContent,
@@ -11,6 +11,11 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useState } from "react"
+import { projects } from "@/data/projects"
+import { ProjectCard } from "@/components/ProjectCard"
+import { experiences } from "@/data/experience"
+import { ExperienceCard } from "@/components/ExperienceCard"
+import { TechStacks } from "@/components/TechStacks"
 
 export default function Home() {
 
@@ -18,7 +23,7 @@ export default function Home() {
 
   return (
 
-    <div className="md:w-6/12 w-11/12 mx-auto relative mb-20" >
+    <div className="md:w-7/12 w-11/12 mx-auto relative mb-20" >
 
       <nav className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-6 pl-1 pr-4 py-1 bg-black text-white border border-gray-200  rounded-full w-fit max-w-100 transition-all duration-300" >
         <div className="flex items-center gap-2">
@@ -46,101 +51,45 @@ export default function Home() {
 
         {/* get in touch */}
         <p className="text-sm font-normal text-gray-700 leading-relaxed tracking-wide mt-5" >Get in touch: <Link href={"mailto:ayushsharma014may@gmail.com"} className="cursor-pointer text-gray-700 border-0  hover:border-b" >ayushsharma014may@gmail.com</Link></p>
+
+        <div className="flex gap-2 flex-wrap mt-4" >
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaFilePdf /> Download Resume</span>
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaLinkedin /> LinkedIn</span>
+          <span className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white p-2 cursor-pointer flex items-center gap-2"><FaGithub /> Github</span>
+          {/* <span className="text-sm text-gray-700" >+91 6302594846</span> */}
+        </div>
       </div>
+
+      {/* Tech Stacks */}
+      <TechStacks />
+
 
       {/* experience */}
       <div className="mt-10" >
-
         <p className="text-md text-gray-700" >Experience</p>
-
-        {/* TCS  */}
-        <div className="border border-gray-300 p-4 mt-1" >
-
-          <p className="text-xs text-gray-700 font-normal" >Tata Consultancy Services</p>
-
-
-          {/* timeline */}
-          <div className="relative p-0">
-            <div className="flex justify-between my-4" >
-              <p className="text-md text-gray-800 font-bold leading-none" >System Engineer (Digital)</p>
-              <p className="text-xs text-gray-700 font-normal" >June 2026 - Present</p>
-            </div>
-          </div>
-
-          <p className="text-xs text-gray-800/80 font-light tracking-wide leading-relaxed" >Hired as a System Engineer (Digital) at Tata Consultancy Services, I am part of a team delivering innovative technology solutions to clients. I work on building and maintaining scalable web applications using modern tools and frameworks. My focus is on developing clean, efficient code while ensuring high performance and reliability. I collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support. I am passionate about continuous learning and committed to delivering excellence in every project I work on.</p>
-
-          {/* <div className="flex items-center gap-2 mt-4" >
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MERN</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Razorpay</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >WebSockets</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS EC2</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SES</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SNS</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MongoDB</span>
-          </div> */}
-
-        </div>
-
-        {/* kommon school  */}
-        <div className="border border-gray-300 p-4 mt-2" >
-
-          <p className="text-xs text-gray-700 font-normal" >Kommonify Venture Pvt Ltd.</p>
-
-
-          {/* timeline */}
-          <div className="relative p-0">
-            {/* <p className="text-md text-gray-800 font-bold leading-none my-4 ms-5" >Associate Software Engineer</p> */}
-            <div className="flex justify-between mt-5" >
-              <p className="text-md text-gray-800 font-bold leading-none ms-5" >Associate Software Engineer</p>
-              <p className="text-xs text-gray-700 font-normal" >May 2026 - Present</p>
-            </div>
-            <div className="flex justify-between my-5" >
-              <p className="text-md text-gray-800 font-bold leading-none ms-5" >Full Stack Developer Fellow</p>
-              <p className="text-xs text-gray-700 font-normal" >Jul 2025 - May 2026</p>
-            </div>
-
-            <div className="absolute inset-y-0 bottom-0 top-0 left-0 w-0.5 bg-gray-700">
-
-              <div className="w-3 h-3 rounded-full bg-gray-700 absolute -left-1 top-0" ></div>
-              <div className="w-3 h-3 rounded-full bg-gray-700 absolute -left-1 bottom-0" ></div>
-            </div>
-          </div>
-
-          <p className="text-xs text-gray-800/80 font-normal leading-relaxed" >Worked as a Full Stack Developer, building end-to-end features from frontend to backend. Developed a subscription management module, integrated Razorpay payment gateway, implemented real-time user tracking using WebSockets, built secure payment APIs with idempotency support, and developed an admin console using MongoDB aggregation pipelines to generate data from multiple collections.</p>
-
-          <div className="flex items-center gap-2 mt-4" >
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MERN</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Razorpay</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >WebSockets</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS EC2</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SES</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SNS</span>
-            <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MongoDB</span>
-          </div>
-
-        </div>
-
-
+        {experiences.map((experience, index) => (
+          <ExperienceCard key={index} index={index} experience={experience} />
+        ))}
       </div >
 
-      {/* Projects */}
+      {/* Github */}
       <div className="mt-10" >
-
         <p className="text-md text-gray-700" >Github</p>
-
-
         <div className="mx-auto w-full  mt-1" >
-
           <Select defaultValue="2026" onValueChange={(e: any) => setYear(e)}>
             <SelectTrigger className="w-fit ms-auto text-gray-700">
               <SelectValue placeholder="Year" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="2023">2023</SelectItem>
-                <SelectItem value="2024">2024</SelectItem>
-                <SelectItem value="2025">2025</SelectItem>
-                <SelectItem value="2026">2026</SelectItem>
+                {[...Array(5)].map((_, i) => {
+                  const year = new Date().getFullYear() - i;
+                  return (
+                    <SelectItem key={year} value={year.toString()}>
+                      {year}
+                    </SelectItem>
+                  );
+                })}
               </SelectGroup>
             </SelectContent>
           </Select>
@@ -150,7 +99,7 @@ export default function Home() {
             username="ayush-may"
             colorScheme="light"
             className="text-gray-800 w-full mx-auto"
-            fontSize={14}
+            fontSize={13}
             blockSize={14}
             blockMargin={4}
             showMonthLabels={true}
@@ -159,83 +108,17 @@ export default function Home() {
           />
         </div>
 
-
       </div >
 
 
       {/* Projects */}
-      <div className="mt-10" >
-
+      <div className="mt-10" id="projects">
         <p className="text-md text-gray-700" >Projects</p>
-
         <div className="grid grid-cols-2 gap-3" >
-
-          <div className="border border-gray-300 p-4 mt-1" >
-
-            {/* timeline */}
-            <div className="relative p-0">
-              <div className="flex justify-between mb-4" >
-                <div className="flex items-center gap-2" >
-                  <p className="text-md text-gray-800 font-bold leading-none" >AI Form Generator</p>
-                  <span className="w-1 h-1 rounded-full bg-gray-600 inline-block" ></span>
-                  <div className="flex gap-2" >
-                    <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaLink /></span>
-                    <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaGithub /></span>
-                  </div>
-                </div>
-                <p className="text-xs text-gray-700 font-normal" >June 2026 - Present</p>
-              </div>
-            </div>
-
-            {/* <p className="text-xs text-gray-800/80 font-light tracking-wide leading-relaxed" >Hired as a System Engineer (Digital) at Tata Consultancy Services, I am part of a team delivering innovative technology solutions to clients. I work on building and maintaining scalable web applications using modern tools and frameworks. My focus is on developing clean, efficient code while ensuring high performance and reliability. I collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support. I am passionate about continuous learning and committed to delivering excellence in every project I work on.</p> */}
-
-            <div className="flex items-center flex-wrap gap-2 mt-4" >
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MERN</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Razorpay</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >WebSockets</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS EC2</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SES</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SNS</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MongoDB</span>
-            </div>
-
-          </div>
-
-          <div className="border border-gray-300 p-4 mt-1" >
-
-            {/* timeline */}
-            <div className="relative p-0">
-              <div className="flex justify-between mb-4" >
-                <div className="flex items-center gap-2" >
-                  <p className="text-md text-gray-800 font-bold leading-none" >AI Form Generator</p>
-                  <span className="w-1 h-1 rounded-full bg-gray-600 inline-block" ></span>
-                  <div className="flex gap-2" >
-                    <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaLink /></span>
-                    <span className="text-xs text-gray-800/80 hover:text-gray-800 cursor-pointer p-1 border border-gray-200" ><FaGithub /></span>
-                  </div>
-                </div>
-                <p className="text-xs text-gray-700 font-normal" >June 2026 - Present</p>
-              </div>
-            </div>
-
-            {/* <p className="text-xs text-gray-800/80 font-light tracking-wide leading-relaxed" >Hired as a System Engineer (Digital) at Tata Consultancy Services, I am part of a team delivering innovative technology solutions to clients. I work on building and maintaining scalable web applications using modern tools and frameworks. My focus is on developing clean, efficient code while ensuring high performance and reliability. I collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support. I am passionate about continuous learning and committed to delivering excellence in every project I work on.</p> */}
-
-            <div className="flex items-center flex-wrap gap-2 mt-4" >
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MERN</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >Razorpay</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >WebSockets</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS EC2</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SES</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >AWS SNS</span>
-              <span className="text-xs text-gray-800/80 p-1 border border-gray-200" >MongoDB</span>
-            </div>
-
-          </div>
-
-
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </div>
-
-
       </div >
 
     </div >
