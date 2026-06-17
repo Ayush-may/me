@@ -140,3 +140,13 @@ html {
         @apply font-sans;
     }
 }
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-cursor-blink {
+    animation: blink 0.8s step-start infinite;
+}
