@@ -19,6 +19,7 @@ import { TechStacks } from "@/components/TechStacks"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { FiArrowRight, FiArrowUp, FiMenu, FiX } from "react-icons/fi"
 import { ContactForm } from "@/components/ContactForm"
+import { CodingPlatforms } from "@/components/CodingPlatforms"
 
 export default function Home() {
 
@@ -77,6 +78,9 @@ export default function Home() {
           <Link href="#github" className="text-[13px] font-normal border-0  hover:border-b">
             Github
           </Link>
+          <Link href="#coding-profiles" className="text-[13px] font-normal border-0  hover:border-b">
+            Profiles
+          </Link>
           <Link href="#projects" className="text-[13px] font-normal border-0  hover:border-b">
             Projects
           </Link>
@@ -116,6 +120,13 @@ export default function Home() {
               className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
             >
               Github
+            </Link>
+            <Link
+              href="#coding-profiles"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
+            >
+              Coding Profiles
             </Link>
             <Link
               href="#projects"
@@ -217,6 +228,9 @@ export default function Home() {
 
       </div >
 
+      {/* Coding Platforms */}
+      <CodingPlatforms />
+
 
       {/* Projects */}
       <div className="mt-10" id="projects">
@@ -232,10 +246,10 @@ export default function Home() {
       </div >
 
       {/* Contact */}
-      <div className="mt-10" id="contact">
+      {/* <div className="mt-10" id="contact">
         <p className="text-md text-gray-700">Contact</p>
         <ContactForm />
-      </div>
+      </div> */}
 
       {/* footer */}
       <footer className="mt-10 border-t border-gray-200 pt-8 pb-4">
