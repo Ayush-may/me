@@ -8,8 +8,9 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "placehold.co"
       }
-    ]
-  }
+    ],
+  },
+  allowedDevOrigins: ['10.30.12.37'],
 
 };
 
