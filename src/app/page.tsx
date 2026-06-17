@@ -20,6 +20,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { FiArrowRight, FiArrowUp, FiMenu, FiX } from "react-icons/fi"
 import { ContactForm } from "@/components/ContactForm"
 import { CodingPlatforms } from "@/components/CodingPlatforms"
+import { Certifications } from "@/components/Certifications"
+import { CSFundamentals } from "@/components/CSFundamentals"
+import { navigationLinks } from "@/data/navigation"
 
 export default function Home() {
 
@@ -70,30 +73,11 @@ export default function Home() {
 
         </div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-5">
-          <Link href="#experience" className="text-[13px] font-normal  border-0  hover:border-b">
-            Experience
-          </Link>
-          <Link href="#github" className="text-[13px] font-normal border-0  hover:border-b">
-            Github
-          </Link>
-          <Link href="#coding-profiles" className="text-[13px] font-normal border-0  hover:border-b">
-            Profiles
-          </Link>
-          <Link href="#projects" className="text-[13px] font-normal border-0  hover:border-b">
-            Projects
-          </Link>
-          <Link href="#contact" className="text-[13px] font-normal border-0  hover:border-b">
-            Contact
-          </Link>
-        </div>
-
         <div className="flex items-center gap-1">
-          {/* Mobile Menu Button */}
+          {/* Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-600 hover:bg-gray-200/50 transition-colors duration-150 rounded-full p-2 focus:outline-none"
+            className="text-gray-600 hover:bg-gray-200/50 transition-colors duration-150 rounded-full p-2 focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <FiX size={16} /> : <FiMenu size={16} />}
@@ -104,46 +88,22 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Dropdown Menu */}
         {isMenuOpen && (
-          <div className="absolute top-14 left-0 right-0 mx-auto w-full bg-white/95 backdrop-blur-md text-black border border-gray-200 rounded-2xl shadow-lg p-3 flex flex-col gap-1 md:hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-            <Link
-              href="#experience"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
-            >
-              Experience
-            </Link>
-            <Link
-              href="#github"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
-            >
-              Github
-            </Link>
-            <Link
-              href="#coding-profiles"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
-            >
-              Coding Profiles
-            </Link>
-            <Link
-              href="#projects"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#contact"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[13px] font-medium py-2.5 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
-            >
-              Contact
-            </Link>
+          <div className="absolute top-14 left-0 right-0 mx-auto w-full bg-white/95 backdrop-blur-md text-black border border-gray-200 rounded-2xl shadow-lg p-3 flex flex-col gap-1 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+            {navigationLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsMenuOpen(false)}
+                className="text-[13px] font-medium py-2 px-4 hover:bg-gray-100/80 rounded-xl transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         )}
+
       </nav>
 
       {/* header name */}
@@ -180,6 +140,9 @@ export default function Home() {
 
       {/* Tech Stacks */}
       <TechStacks />
+
+      {/* CS Fundamentals */}
+      <CSFundamentals />
 
 
       {/* experience */}
@@ -244,6 +207,9 @@ export default function Home() {
         <Link className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white p-2 cursor-pointer flex items-center gap-2 w-fit mt-3 mx-auto" href={"https://github.com/ayush-may"} >checkout my projects <FiArrowRight size={12} /></Link>
 
       </div >
+
+      {/* Certifications */}
+      <Certifications />
 
       {/* Contact */}
       {/* <div className="mt-10" id="contact">
