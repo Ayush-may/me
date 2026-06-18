@@ -8,8 +8,9 @@ export interface Role {
 export interface Experience {
   company: string;
   roles: Role[];
-  description: string;
+  description: string[];
   tags?: string[];
+  show: boolean;
 }
 
 export const experiences: Experience[] = experienceData;
