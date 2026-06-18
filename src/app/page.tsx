@@ -148,7 +148,7 @@ export default function Home() {
       {/* experience */}
       <div className="mt-10" id="experience" >
         <p className="text-md text-gray-700" >Experience</p>
-        {experiences.map((experience, index) => (
+        {experiences.map((experience, index) => experience.show && (
           <ExperienceCard key={index} index={index} experience={experience} />
         ))}
       </div >

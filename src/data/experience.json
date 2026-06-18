@@ -1,16 +1,24 @@
 [
   {
     "company": "Tata Consultancy Services",
+    "show": false,
     "roles": [
       {
         "title": "System Engineer (Digital)",
         "duration": "June 2026 - Present"
       }
     ],
-    "description": "Hired as a System Engineer (Digital) at Tata Consultancy Services, I am part of a team delivering innovative technology solutions to clients. I work on building and maintaining scalable web applications using modern tools and frameworks. My focus is on developing clean, efficient code while ensuring high performance and reliability. I collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support. I am passionate about continuous learning and committed to delivering excellence in every project I work on."
+    "description": [
+      "Hired as a System Engineer (Digital) to deliver innovative technology solutions to clients.",
+      "Work on building and maintaining scalable web applications using modern tools and frameworks.",
+      "Focus on developing clean, efficient code while ensuring high performance and reliability.",
+      "Collaborate with cross-functional teams to deliver end-to-end solutions, from planning and design to deployment and support.",
+      "Passionate about continuous learning and committed to delivering excellence in every project."
+    ]
   },
   {
     "company": "Kommonify Venture Pvt Ltd.",
+    "show": true,
     "roles": [
       {
         "title": "Associate Software Engineer",
@@ -21,7 +29,16 @@
         "duration": "Jul 2025 - May 2026"
       }
     ],
-    "description": "Worked as a Full Stack Developer, building end-to-end features from frontend to backend. Developed a subscription management module, integrated Razorpay payment gateway, implemented real-time user tracking using WebSockets, built secure payment APIs with idempotency support, and developed an admin console using MongoDB aggregation pipelines to generate data from multiple collections.",
+    "description": [
+      "Built a subscription management module across frontend, backend, and database layers.",
+      "Integrated Razorpay payments with error handling and transaction validation.",
+      "Implemented Twilio-based messaging and notification workflows.",
+      "Integrated SendGrid for transactional emails to 250+ active users.",
+      "Developed WebSocket-based real-time user tracking for organizations.",
+      "Built a 6-level RBAC system with customizable roles and permissions.",
+      "Centralized email delivery using Google, SendGrid, and AWS SES.",
+      "Integrated AWS SES, SNS, and webhooks for email status tracking."
+    ],
     "tags": [
       "MERN",
       "Razorpay",
@@ -29,7 +46,9 @@
       "AWS EC2",
       "AWS SES",
       "AWS SNS",
-      "MongoDB"
+      "MongoDB",
+      "Twilio",
+      "SendGrid"
     ]
   }
 ]

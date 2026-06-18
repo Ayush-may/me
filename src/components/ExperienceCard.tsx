@@ -19,13 +19,12 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
             return (
               <div
                 key={rIndex}
-                className={`flex justify-between ${
-                  rIndex === 0
-                    ? "mt-5 mb-5"
-                    : rIndex === experience.roles.length - 1
+                className={`flex justify-between items-center relative ${rIndex === 0
+                  ? "mt-5 mb-5"
+                  : rIndex === experience.roles.length - 1
                     ? "mb-5"
                     : "my-5"
-                }`}
+                  }`}
               >
                 <p className="text-md text-gray-800 font-bold leading-none ms-5" >{role.title}</p>
                 <p className="text-xs text-gray-700 font-normal" >{role.duration}</p>
@@ -49,7 +48,11 @@ export function ExperienceCard({ experience, index }: ExperienceCardProps) {
         )}
       </div>
 
-      <p className="text-xs text-gray-800/80 font-normal leading-relaxed" >{experience.description}</p>
+      <ul className="list-disc pl-4 text-xs text-gray-800/80 font-normal leading-relaxed space-y-1" >
+        {experience.description.map((bullet, bIndex) => (
+          <li key={bIndex}>{bullet}</li>
+        ))}
+      </ul>
 
       {experience.tags && experience.tags.length > 0 && (
         <div className="flex items-center flex-wrap gap-2 mt-4" >

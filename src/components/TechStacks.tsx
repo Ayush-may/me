@@ -15,7 +15,7 @@ export function TechStacks() {
           return (
             <div
               key={index}
-              className={`flex items-center gap-1.5 px-3 py-1 text-[11px] font-extrabold rounded-xs uppercase tracking-wider select-none shadow-sm cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ${tech.borderClass || ""}`}
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-extrabold rounded-xs uppercase tracking-wider select-none shadow-sm cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ${tech.borderClass || ""}`}
               style={{
                 backgroundColor: tech.backgroundColor,
                 color: textCol,
