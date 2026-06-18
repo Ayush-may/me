@@ -23,6 +23,13 @@ import { CodingPlatforms } from "@/components/CodingPlatforms"
 import { Certifications } from "@/components/Certifications"
 import { CSFundamentals } from "@/components/CSFundamentals"
 import { navigationLinks } from "@/data/navigation"
+import { socials } from "@/data/socials"
+
+const iconMap: { [key: string]: React.ComponentType<any> } = {
+  FaFilePdf: FaFilePdf,
+  FaLinkedin: FaLinkedin,
+  FaGithub: FaGithub,
+}
 
 export default function Home() {
 
@@ -131,9 +138,22 @@ export default function Home() {
 
 
         <div className="flex gap-2 flex-wrap mt-4" >
-          <Link href={"#"} className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white p-2 cursor-pointer flex items-center gap-2"><FaFilePdf /> Download Resume</Link>
-          <Link href={"#"} className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white p-2 cursor-pointer flex items-center gap-2"><FaLinkedin /> LinkedIn</Link>
-          <Link href={"#"} className="text-sm text-gray-700  border border-gray-400 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white p-2 cursor-pointer flex items-center gap-2"><FaGithub /> Github</Link>
+          {socials.map((social) => {
+            const Icon = iconMap[social.icon]
+            return (
+              <Link
+                key={social.label}
+                href={social.href}
+                download={social.download}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-700 border border-gray-400 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white p-2 cursor-pointer flex items-center gap-2"
+              >
+                {Icon && <Icon />}
+                {social.label}
+              </Link>
+            )
+          })}
           {/* <span className="text-sm text-gray-700" >+91 6302594846</span> */}
         </div>
       </div>

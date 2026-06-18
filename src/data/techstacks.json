@@ -1,73 +1,95 @@
 [
   {
-    "name": "AWS SES",
-    "icon": "SiAmazonwebservices",
-    "backgroundColor": "#FF9900"
+    "name": "JavaScript",
+    "icon": "SiJavascript",
+    "backgroundColor": "#323330",
+    "textColor": "#F7DF1E"
   },
   {
-    "name": "AWS SNS",
-    "icon": "SiAmazonwebservices",
-    "backgroundColor": "#FF9900"
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "backgroundColor": "#007ACC"
   },
   {
-    "name": "Express Validator",
+    "name": "PHP",
+    "icon": "SiPhp",
+    "backgroundColor": "#777BB4"
+  },
+  {
+    "name": "Java",
+    "icon": "SiOpenjdk",
+    "backgroundColor": "#EA2D2E"
+  },
+  {
+    "name": "Python",
+    "icon": "SiPython",
+    "backgroundColor": "#3776AB"
+  },
+  {
+    "name": "SQL",
+    "icon": "SiMysql",
+    "backgroundColor": "#4479A1"
+  },
+  {
+    "name": "HTML5",
+    "icon": "SiHtml5",
+    "backgroundColor": "#E34F26"
+  },
+  {
+    "name": "CSS3",
+    "icon": "SiCss3",
+    "backgroundColor": "#1572B6"
+  },
+  {
+    "name": "React",
+    "icon": "SiReact",
+    "backgroundColor": "#61DAFB",
+    "textColor": "#000000"
+  },
+  {
+    "name": "Next.js",
+    "icon": "SiNextdotjs",
+    "backgroundColor": "#000000"
+  },
+  {
+    "name": "Node.js",
+    "icon": "SiNodedotjs",
+    "backgroundColor": "#339933"
+  },
+  {
+    "name": "Express.js",
     "icon": "SiExpress",
     "backgroundColor": "#303030"
   },
   {
-    "name": "Axios",
-    "icon": "SiAxios",
-    "backgroundColor": "#5A29E4"
+    "name": "NestJS",
+    "icon": "SiNestjs",
+    "backgroundColor": "#E0234E"
   },
   {
-    "name": "Multer",
-    "icon": "SiExpress",
-    "backgroundColor": "#303030"
+    "name": "MongoDB",
+    "icon": "SiMongodb",
+    "backgroundColor": "#47A248"
   },
   {
-    "name": "Mongoose ODM",
-    "icon": "SiMongoose",
-    "backgroundColor": "#880000"
+    "name": "PostgreSQL",
+    "icon": "SiPostgresql",
+    "backgroundColor": "#336791"
   },
   {
-    "name": "Shadcn UI",
-    "icon": "SiShadcnui",
-    "backgroundColor": "#000000"
+    "name": "MySQL",
+    "icon": "SiMysql",
+    "backgroundColor": "#00758F"
   },
   {
-    "name": "Radix UI",
-    "icon": "SiRadixui",
-    "backgroundColor": "#161618"
+    "name": "Prisma",
+    "icon": "SiPrisma",
+    "backgroundColor": "#2D3748"
   },
   {
-    "name": "REST API",
-    "icon": "SiFastapi",
-    "backgroundColor": "#009688"
-  },
-  {
-    "name": "TanStack Query",
-    "icon": "SiReactquery",
-    "backgroundColor": "#FF4154"
-  },
-  {
-    "name": "React Router",
-    "icon": "SiReactrouter",
-    "backgroundColor": "#CA4245"
-  },
-  {
-    "name": "Bcrypt",
-    "icon": "SiSecurityscorecard",
-    "backgroundColor": "#1F2937"
-  },
-  {
-    "name": "JSON Web Token",
-    "icon": "SiJsonwebtokens",
-    "backgroundColor": "#000000"
-  },
-  {
-    "name": "Webhooks",
-    "icon": "SiWebhook",
-    "backgroundColor": "#6366F1"
+    "name": "Tailwind CSS",
+    "icon": "SiTailwindcss",
+    "backgroundColor": "#06B6D4"
   },
   {
     "name": "Redux Toolkit",
@@ -80,14 +102,173 @@
     "backgroundColor": "#EC5990"
   },
   {
-    "name": "Linux",
-    "icon": "SiLinux",
-    "backgroundColor": "#FCC624",
-    "textColor": "#000000"
+    "name": "TanStack Query",
+    "icon": "SiReactquery",
+    "backgroundColor": "#FF4154"
   },
   {
-    "name": "VS Code",
-    "icon": "SiVisualstudiocode",
-    "backgroundColor": "#007ACC"
+    "name": "GraphQL",
+    "icon": "SiGraphql",
+    "backgroundColor": "#E10098"
+  },
+  {
+    "name": "Apollo Client",
+    "icon": "SiApollographql",
+    "backgroundColor": "#311C87"
+  },
+  {
+    "name": "Apollo Server",
+    "icon": "SiApollographql",
+    "backgroundColor": "#311C87"
+  },
+  {
+    "name": "Redis",
+    "icon": "SiRedis",
+    "backgroundColor": "#DC382D"
+  },
+  {
+    "name": "Mongoose ODM",
+    "icon": "SiMongoose",
+    "backgroundColor": "#880000"
+  },
+  {
+    "name": "JWT",
+    "icon": "SiJsonwebtokens",
+    "backgroundColor": "#000000"
+  },
+  {
+    "name": "Bcrypt",
+    "icon": "SiSecurityscorecard",
+    "backgroundColor": "#1F2937"
+  },
+  {
+    "name": "Axios",
+    "icon": "SiAxios",
+    "backgroundColor": "#5A29E4"
+  },
+  {
+    "name": "Express Validator",
+    "icon": "SiExpress",
+    "backgroundColor": "#303030"
+  },
+  {
+    "name": "Multer",
+    "icon": "SiExpress",
+    "backgroundColor": "#303030"
+  },
+  {
+    "name": "REST API",
+    "icon": "SiFastapi",
+    "backgroundColor": "#009688"
+  },
+  {
+    "name": "Webhooks",
+    "icon": "SiWebhook",
+    "backgroundColor": "#6366F1"
+  },
+  {
+    "name": "Socket.IO",
+    "icon": "SiSocketdotio",
+    "backgroundColor": "#010101"
+  },
+  {
+    "name": "WebSocket",
+    "icon": "SiSocketdotio",
+    "backgroundColor": "#010101"
+  },
+  {
+    "name": "Shadcn UI",
+    "icon": "SiShadcnui",
+    "backgroundColor": "#000000"
+  },
+  {
+    "name": "Radix UI",
+    "icon": "SiRadixui",
+    "backgroundColor": "#161618"
+  },
+  {
+    "name": "AWS",
+    "icon": "SiAmazonwebservices",
+    "backgroundColor": "#FF9900"
+  },
+  {
+    "name": "AWS SES",
+    "icon": "SiAmazonwebservices",
+    "backgroundColor": "#FF9900"
+  },
+  {
+    "name": "AWS SNS",
+    "icon": "SiAmazonwebservices",
+    "backgroundColor": "#FF9900"
+  },
+  {
+    "name": "Docker",
+    "icon": "SiDocker",
+    "backgroundColor": "#2496ED"
+  },
+  {
+    "name": "Nginx",
+    "icon": "SiNginx",
+    "backgroundColor": "#009639"
+  },
+  {
+    "name": "Vercel",
+    "icon": "SiVercel",
+    "backgroundColor": "#000000"
+  },
+  {
+    "name": "Netlify",
+    "icon": "SiNetlify",
+    "backgroundColor": "#000000"
+  },
+  {
+    "name": "Render",
+    "icon": "SiRender",
+    "backgroundColor": "#46E3B7"
+  },
+  {
+    "name": "Firebase",
+    "icon": "SiFirebase",
+    "backgroundColor": "#039BE5"
+  },
+  {
+    "name": "Razorpay",
+    "icon": "SiRazorpay",
+    "backgroundColor": "#0C2451"
+  },
+  {
+    "name": "Twilio",
+    "icon": "SiTwilio",
+    "backgroundColor": "#F22F46"
+  },
+  {
+    "name": "SendGrid",
+    "icon": "SiSendgrid",
+    "backgroundColor": "#51A9E3"
+  },
+  {
+    "name": "Git",
+    "icon": "SiGit",
+    "backgroundColor": "#F05032"
+  },
+  {
+    "name": "GitHub",
+    "icon": "SiGithub",
+    "backgroundColor": "#181717"
+  },
+  {
+    "name": "CodeIgniter",
+    "icon": "SiCodeigniter",
+    "backgroundColor": "#EF4223"
+  },
+  {
+    "name": "Supabase",
+    "icon": "SiSupabase",
+    "backgroundColor": "#3ECF8E"
+  },
+  {
+    "name": "Strapi",
+    "icon": "SiStrapi",
+    "backgroundColor": "#4945FF"
   }
 ]
