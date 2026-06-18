@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Download Resume",
+    "href": "/ayush_sharma_resume.pdf",
+    "icon": "FaFilePdf",
+    "download": true
+  },
+  {
+    "label": "LinkedIn",
+    "href": "https://www.linkedin.com/in/ayushmay/",
+    "icon": "FaLinkedin"
+  },
+  {
+    "label": "Github",
+    "href": "https://github.com/ayush-may",
+    "icon": "FaGithub"
+  }
+]
