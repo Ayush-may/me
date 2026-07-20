@@ -15,8 +15,9 @@
   {
     "title": "AI Form Generator",
     "link": "#",
-    "github": "#",
+    "github": "https://github.com/ayush-may/ai-form-generator",
     "duration": "June 2026 - Present",
+    "description": "An AI-powered form generation platform that enables users to build structured dynamic forms from natural language prompts. Features real-time AI response streaming, conversational context, auto-generated schemas via tool calling, and form snapshot persistence.",
     "tags": [
       "MERN",
       "Razorpay",
@@ -24,20 +25,34 @@
       "AWS EC2",
       "AWS SES",
       "AWS SNS",
-      "MongoDB"
+      "MongoDB",
+      "Next.js",
+      "NestJS",
+      "Prisma ORM",
+      "Vercel AI SDK",
+      "Groq API",
+      "PostgreSQL",
+      "TypeScript"
     ]
   },
   {
-    "title": "AI FeedBack",
+    "title": "AI-Powered Feedback Application",
     "link": "#",
     "github": "#",
     "duration": "June 2026 - Present",
+    "description": "An interactive evaluation tool that generates detailed spelling, grammar, and structural feedback for user-submitted essays/texts using the Gemini 2.0 Flash API. Features persistent feedback history, JWT session verification, and a modern Radix-based UI dashboard.",
     "tags": [
       "MERN",
       "Gemini API",
       "AWS Dynamo DB",
       "AWS S3",
-      "MongoDB"
+      "MongoDB",
+      "React",
+      "Express.js",
+      "Node.js",
+      "Tailwind CSS v4",
+      "TypeScript",
+      "JWT"
     ]
   },
   {
